@@ -17,28 +17,28 @@
   </br></br><h1>마술을 관람해 주셔서 감사합니다!</h1></br></br></br>
   <p style="display:inline;">관객님은 </p>
   <p id="j1" style="display:inline; visibility:hidden;">J</p>
-  <p id"heart1", style="display:inline; visibility:hidden; color:red">♥</p> 
+  <p id="heart1", style="display:inline; visibility:hidden; color:red">♥</p> 
   <p style="display:inline;">카드를 선택하셨을 겁니다.</p>
 
   <p></p></br>
 
   <p style="display:inline;">맨 윗 카드도 </h3>
   <p id="j2" style="display:inline; visibility:hidden;">J</p>
-  <p id"heart2" style="display:inline; visibility:hidden; color:red">♥</p> 
+  <p id="heart2" style="display:inline; visibility:hidden; color:red">♥</p> 
   <p style="display:inline;">였을거고</p>
 
   <p></p></br>
 
   <p style="display:inline;">맨 밑 카드도 </p>
   <p id="j3" style="display:inline; visibility:hidden; ">J</p>
-  <p id"heart3" style="display:inline; visibility:hidden; color:red">♥</p> 
+  <p id="heart3" style="display:inline; visibility:hidden; color:red">♥</p> 
   <p style="display:inline;">였을겁니다.</p>
 
   <p></p></br>
 
   <p style="display:inline;">모든 카드가 </p>
   <p id="j4" style="display:inline; visibility:hidden;">J</p>
-  <p id"heart4" style="display:inline; visibility:hidden; color:red">♥</p> 
+  <p id="heart4" style="display:inline; visibility:hidden; color:red">♥</p> 
   <p style="display:inline;">로 바뀌었을 것이고</p></br>
 
   <p></p></br>
@@ -46,12 +46,12 @@
   <p>다시 모든 카드가 정상으로 돌아왔을 것입니다.</p></br>
   <h1>그리고 스캔하신 QR코드도....</h1>
 
-  setTimeout("visible1()", 3000);
-  setTimeout("visible2()", 6000);
-  setTimeout("visible3()", 9000);
-  setTimeout("visible4()", 12000);
-
   <script>
+    setTimeout("visible1()", 3000);
+    setTimeout("visible2()", 6000);
+    setTimeout("visible3()", 9000);
+    setTimeout("visible4()", 12000);
+
     function visible1() {
       document.getElementById("j1").style.visibility = "visible";
       document.getElementById("heart1").style.visibility = "visible";
@@ -60,22 +60,22 @@
     }
     
     function visible2() {
-      document.getElementById("j1").style.visibility = "visible";
-      document.getElementById("heart1").style.visibility = "visible";
+      document.getElementById("j2").style.visibility = "visible";
+      document.getElementById("heart2").style.visibility = "visible";
 
       return;
     }
     
     function visible3() {
-      document.getElementById("j1").style.visibility = "visible";
-      document.getElementById("heart1").style.visibility = "visible";
+      document.getElementById("j3").style.visibility = "visible";
+      document.getElementById("heart3").style.visibility = "visible";
 
       return;
     }
     
     function visible4() {
-      document.getElementById("j1").style.visibility = "visible";
-      document.getElementById("heart1").style.visibility = "visible";
+      document.getElementById("j4").style.visibility = "visible";
+      document.getElementById("heart4").style.visibility = "visible";
 
       return;
     }
