@@ -23,8 +23,9 @@
   <p style="display:inline; color:red">♥</p>
   <p style="display:inline;">였을거고</p>
   <p></p></br>
-  <p style="display:inline;">맨 밑 카드도 J</p>
-  <p style="display:inline; color:red">♥</p> 
+  <p style="display:inline;">맨 밑 카드도 </p>
+  <p id="j1", style="display:inline;">J</p>
+  <p id"heart1", style="display:inline; color:red">♥</p> 
   <p style="display:inline;">였을겁니다.</p>
   <p></p></br>
   <p style="display:inline;">모든 카드가 J</p>
@@ -33,6 +34,29 @@
   <p></p></br>
   <p>다시 모든 카드가 정상으로 돌아왔을 것입니다.</p></br>
   <h1>그리고 스캔하신 QR코드도....</h1>
+
+  <script>
+    setTimeout(function() {
+      console.log('Works!');
+    }, 3000);
+    
+    function toggleImg(num) {
+      if (num < 1 || num > 12 || (num % 1 != 0)){
+        alert("잘못된 입력. 1~12사이의 정수를 입력해야합니다.");
+        return;
+      }
+
+      const imgs = ["01시.png", "02시.png", "03시.png", "04시.png", "05시.png", "06시.png", "07시.png", "08시.png", "09시.png", "10시.png", "11시.png", "12시.png"];
+      document.getElementById("clock_img").src = imgs[num - 1];
+
+      document.getElementById("labelselectClock1").style.display = "none";
+      document.getElementById("selectClock").style.display = "none";
+      document.getElementById("labelselectClock2").style.display = "none";
+      document.getElementById("selectClockbutton").style.display = "none";
+
+      return;
+    }
+  </script>
   
   </br></br></br></br></br>
     
