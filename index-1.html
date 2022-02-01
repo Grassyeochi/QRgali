@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>QRgali</title>
+  <meta charset="utf-8">
+  <meta property="og:url"                content="grassyeochi.github.io/QRgali/index.html" />
+  <meta property="og:type"               content="website" />
+  <meta property="og:title"              content="마술 정리" />
+  <meta property="og:description"        content="마술 정리" />
+  <meta property="og:image"              content="thumnail.jpg" />
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+</head>
+
+<body style="text-align:center;font-size:30px;">
+  </br></br><h1>마술을 관람해 주셔서 감사합니다!</h1></br></br></br>
+  <p style="display:inline;">관객님은 </p>
+  <p id="j1" style="display:inline; visibility:hidden; font-weight:bold;">J</p>
+  <p id="heart1", style="display:inline; visibility:hidden; font-weight:bold; color:red">♥</p> 
+  <p style="display:inline;">카드를 선택하셨을 겁니다.</p>
+
+  <p></p></br>
+
+  <p style="display:inline;">맨 윗 카드도 </h3>
+  <p id="j2" style="display:inline; visibility:hidden; font-weight:bold;">J</p>
+  <p id="heart2" style="display:inline; visibility:hidden; font-weight:bold; color:red">♥</p> 
+  <p style="display:inline;">였을거고</p>
+
+  <p></p></br>
+
+  <p style="display:inline;">맨 밑 카드도 </p>
+  <p id="j3" style="display:inline; visibility:hidden; font-weight:bold;">J</p>
+  <p id="heart3" style="display:inline; visibility:hidden; font-weight:bold; color:red">♥</p> 
+  <p style="display:inline;">였을겁니다.</p>
+
+  <p></p></br>
+
+  <p style="display:inline;">모든 카드가 </p>
+  <p id="j4" style="display:inline; visibility:hidden; font-weight:bold;">J</p>
+  <p id="heart4" style="display:inline; visibility:hidden; font-weight:bold; color:red">♥</p> 
+  <p style="display:inline;">로 바뀌었을 것이고</p></br>
+
+  <p></p></br>
+
+  <p>다시 모든 카드가 정상으로 돌아왔을 것입니다.</p></br>
+  <h1>그리고 스캔하신 QR코드도....</h1>
+
+  <script>
+    setTimeout("visible_script(1)", 3000);
+    setTimeout("visible_script(2)", 5500);
+    setTimeout("visible_script(3)", 8000);
+    setTimeout("visible_script(4)", 10500);
+
+    function visible_script(num) {
+      const j = ["j1", "j2", "j3", "j4"]
+      const heart = ["heart1", "heart2", "heart3", "heart4"]
+
+      document.getElementById(j[num - 1]).style.visibility = "visible";
+      document.getElementById(heart[num - 1]).style.visibility = "visible";
+
+      return;
+    }
+    
+  </script>
+  
+  </br></br></br></br></br>
+    
+</body>
+</html>
